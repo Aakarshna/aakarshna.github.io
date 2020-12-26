@@ -43,7 +43,6 @@ table {
   border-spacing: 0; }
 
 
-
 html,  body{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -56,6 +55,7 @@ $white: #ffffff;
 $grey: #F1EDE9;
 $blue: #A2FBF4;
 $light-grey: #353639;
+$red: #e23744;
 // Breakpoints
 $mobile-landscape: 30rem; // 480px
 $tablet: 40rem; // 640px
@@ -63,11 +63,130 @@ $tablet-wide: 48rem; // 768px
 $desktop: 64rem; // 1024px
 $widescreen: 71.25rem; // 1140px
 
+a{
+  text-decoration: none;
+  color: $red;
+  font-weight: 500;
+}
+
+
 // Basic layout
 .container{
   max-width: 1440px;
   margin: 0 auto;
   @media (max-width: $tablet-wide){
       width: 100%;
+  }
+}
+
+
+.nav{
+  .navbar{
+    padding: 36px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .name_logo{
+      img{
+        height: 20px;
+      }
+    }
+  }
+
+  .social{
+    a{
+      font-size: 18px;
+    }
+  }
+}
+
+.info{
+  .ak-info{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .bio{
+    margin-top: 120px;
+    margin-bottom: 24px;
+    @media (max-width: $mobile-landscape){
+        margin-top: 44px;
+    }
+    p{
+      font-size: 28px;
+      line-height: 140%;
+      padding: 12px;
+      @media (max-width: $mobile-landscape){
+          font-size: 24px;
+      }
+    }
+    a{
+      font-weight: 600;
+      text-decoration: none;
+      color: $red;
+      &:hover{
+        color: darken($red, 10%);
+      }
+    }
+  }
+  .products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: $mobile-landscape){
+        flex-direction: column;
+    }
+    .p-box{
+      width: 50%;
+      @media (max-width: $mobile-landscape){
+          width: 100%;
+      }
+      .p-box-wrap{
+        padding: 12px;
+        a{
+          display: flex;
+          padding: 16px;
+          border-radius: 12px;
+          img{
+            height: 64px;
+            margin-right: 12px;
+          }
+          h3{
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 8px;
+          }
+          p{
+            line-height: 120%;
+          }
+        }
+        .noted{
+          background: #B0E2FF;
+          &:hover{
+            background: darken(#B0E2FF, 3%);
+          }
+          h3{
+            color: #33322E;
+          }
+          p{
+            color: #33322E;
+            line-height: 120%;
+          }
+        }
+        .designletter{
+          background: #0D38CE;
+          color: $white;
+          &:hover{
+            background: darken(#0D38CE, 3%);
+          }
+          h3{
+            color: $white;
+          }
+          p{
+            line-height: 120%;
+          }
+        }
+      }
+    }
   }
 }

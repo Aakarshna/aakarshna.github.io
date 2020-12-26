@@ -43,6 +43,14 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          name: `keywords`,
+          content: `aakarshna, illustrations, basic illustrations, happy illustrations, bright illustrations, color illustrations, color sketches, basic sketches, human illustrations, illustration, geometrical illustrations`,
+        },
+        {
+          property: `og:image`,
+          content: `https://aakarshna.co/preview.jpg`,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -60,7 +68,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
+          content: site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
