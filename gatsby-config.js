@@ -1,14 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
-    },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    title: `Aakarshna`,
+    author: `Aakarshna`,
+    description: `Full stack product and UX enthusiast`,
+    siteUrl: `https://www.aakarshna.co/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `aakarshnaanand`,
     },
   },
   plugins: [
@@ -53,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-154982602-1`,
       },
     },
     `gatsby-plugin-feed`,
@@ -66,10 +63,11 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/hey.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
