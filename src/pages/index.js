@@ -14,53 +14,32 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Aakarshna Portfolio" />
         <>
-        <div className="nav">
-          <div className="container">
-            <div className="navbar">
-              <div className="name_logo">
-                <a href="#"><img src="ak_logo.svg"/></a>
+          <div className="main-wrap">
+            <div className="container">
+              <div className="my-img">
+                <img src="preview.png" />
               </div>
-              <div className="social">
-                <a href="https://twitter.com/aakarshnaanand">twitter</a>
+              <div className="title">
+                <h1>Aakarshna</h1>
+              </div>
+              <div className="what-i-do">
+                <div className="w-wrap">
+                  <ul>
+                    <li><a href="https://zomato.com" target="__blank">I work at zomato ✨</a></li>
+                    <li><a href="https://designletter.co/?ref=aakarshna" target="__blank">I curate Designletter 🎨</a></li>
+                    <li><a href="https://aakarshna.co/noted/" target="__blank">I built Noted for Figma 📝</a></li>
+                    <li><a href="https://medium.com/@aakarshnaanand/" target="__blank">I write on Medium ✍🏼</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="social-link">
+                <div className="s-wrap">
+                  <a href="https://twitter.com/aakarshnaanand/"><img src="twitter.svg"/></a>
+                  <a href="https://linkedin.com/in/aakarshnaanand/"><img src="linkedin.svg"/></a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="info">
-          <div className="container">
-            <div className="ak-info">
-              <div className="bio">
-                <p>Hello! I am a full stack product and UX enthusiast from India. I design app experiences at <a href="https://zomato.com">zomato</a> to help you to discover your favourite food and restaurants.</p>
-              </div>
-              <div className="products">
-                <div className="p-box">
-                  <div className="p-box-wrap">
-                    <a href="https://designletter.co" className="designletter">
-                      <img src="designletter-box.png"/>
-                      <div className="p-desc">
-                        <h3>designletter</h3>
-                        <p>A weekly newsletter with design resources & inspiration</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="p-box">
-                  <div className="p-box-wrap">
-                    <a href="/noted" className="noted">
-                      <img src="noted-box.png"/>
-                      <div className="p-desc">
-                        <h3>noted</h3>
-                        <p>makes it easy for everyone to take quick notes on Figma</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
         </>
       </Layout>
     )
